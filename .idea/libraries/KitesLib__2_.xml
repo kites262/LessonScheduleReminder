@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="KitesLib (2)">
-    <CLASSES />
-    <JAVADOC />
-    <SOURCES>
-      <root url="jar://$PROJECT_DIR$/src/KitesLib.jar!/" />
-    </SOURCES>
-  </library>
-</component>

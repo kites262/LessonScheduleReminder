@@ -7,17 +7,6 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
     <orderEntry type="jdk" jdkName="15" jdkType="JavaSDK" />
-    <orderEntry type="library" name="KitesLib" level="application" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES />
-        <JAVADOC />
-        <SOURCES>
-          <root url="file://$MODULE_DIR$/../KitesLib/.PRODUCT" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="library" name="KitesLib (2)" level="project" />
   </component>
 </module>

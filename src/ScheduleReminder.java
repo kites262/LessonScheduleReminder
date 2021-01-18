@@ -14,20 +14,21 @@ public class ScheduleReminder {
 		System.out.println("Good day, flew_kites!");
 		System.out.println(date.get(Calendar.DATE) + "," + Date.Month.toMonth(date.get(Calendar.MONTH)) + "," + date.get(Calendar.YEAR) + " | " + now + " now.");
 		System.out.println("--> " + sc.getLesson(lessonIndexNow) + " <--");
-		System.out.println("\tis going on.");
+		System.out.println("\tis going on");
 		if(lessonIndexNow != 7){
 			System.out.println(
-					"["
-					+ ScheduleTable.lessonPeriod[lessonIndexNow]
-					+ " "
-					+ sc.getLesson(lessonIndexNow)
-					+ "]"
+					"* Index "
+					+ lessonIndexNow
 			);
-
 			System.out.println(
-					"\t"
-					+ (ScheduleTable.lessonPeriod[lessonIndexNow].getEnd().toInt() - now.toInt())
-					+ " min remaining."
+					"* "
+							+ (ScheduleTable.lessonPeriod[lessonIndexNow].getEnd().toInt() - now.toInt())
+							+ " min remaining"
+			);
+			System.out.println(
+					"\t[ "
+					+ ScheduleTable.lessonPeriod[lessonIndexNow]
+					+ " ]"
 			);
 		}
 		System.out.println("Today's schedule: ");
