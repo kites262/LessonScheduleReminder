@@ -5,7 +5,7 @@ import ml.kites.canlendar.Date;
 public class ScheduleTable {
 
 	private String[] lesson = new String[8];
-	public static final String day1 = "ZCBMECP";
+	public static final String day1 = "ZCBMEZP";
 	public static final String day2 = "EMEZPCB";
 	public static final String day3 = "ZZPCBME";
 	public static final String day4 = "EBCEMPZ";
@@ -43,17 +43,6 @@ public class ScheduleTable {
 			}else{
 				setTable(toSubject("NNNNNNN"));
 			}
-	}
-
-	public int indexOfGoingOn(Date.Time t){
-		int i;
-		main :
-		for(i = 0; i <= 6; i++){
-			if(lessonPeriod[i].inPeriod(t)){
-				break main;
-			}
-		}
-		return i;
 	}
 
 	public String getLesson(int i){

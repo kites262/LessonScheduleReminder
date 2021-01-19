@@ -22,11 +22,7 @@ public class Date {
 		private int value;
 
 		public Minute(int m){
-			if(m >= 0 && m <= 60){
 				value = m;
-			}else{
-				value =0;
-			}
 		}
 
 		public void setValue(int value) {
@@ -45,11 +41,7 @@ public class Date {
 	public static class Hour{
 		private int value;
 		public Hour(int h){
-			if(h >= 0 && h <= 24){
 				value = h;
-			}else{
-				value = 0;
-			}
 		}
 		public void setValue(int value) {
 			this.value = value;
@@ -71,6 +63,11 @@ public class Date {
 		public Time(int h, int m){
 			hour = new Hour(h);
 			minute = new Minute(m);
+		}
+
+		public Time(int value){
+			hour = new Hour(0);
+			minute = new Minute(value);
 		}
 
 		public Hour getHour() {
